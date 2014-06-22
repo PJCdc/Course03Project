@@ -197,7 +197,7 @@ mean.sd.data.melt <- melt(mean.sd.data,
 mean.sd.data.tidy <- dcast(mean.sd.data.melt,
                            SubjectCode + ActivityCode ~ measurementName,
                            fun.aggregate = mean,
-                           value.var = "measurement", drop = FALSE}
+                           value.var = "measurement", drop = FALSE)
 
 ## head(mean.sd.data.tidy[,1:4],10)
 
